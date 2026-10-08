@@ -20,7 +20,7 @@ I plan to collect data about my commute to and from campus
 I'll be using Google Sheets to collect my data, as I have it on
 my phone, making data entry easy
 
-[Data collection spreadsheet](https://docs.google.com/spreadsheets/d/1-2Z2D2LUQVXEo4_aCibJcYbf_6ATQ67Pk72uiq38kME/edit?usp=sharing)
+[**Data collection spreadsheet**](https://docs.google.com/spreadsheets/d/1-2Z2D2LUQVXEo4_aCibJcYbf_6ATQ67Pk72uiq38kME/edit?usp=sharing)
 
 ### Attributes to collect
 
