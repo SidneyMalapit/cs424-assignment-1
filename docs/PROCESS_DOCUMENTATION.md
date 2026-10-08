@@ -40,6 +40,7 @@ my phone, making data entry easy
 |arrive\_school|temporal|Time of departure from last public transportation vehicle (bus, train) to campus<br><br>(ex. if I were to take the Blue Line to campus, I mark the time I take the first step onto the UIC-Halsted Blue Line platform)|9:23 AM|
 |leave\_school|temporal|Time of arrival at station for first form of public transportation to get home<br><br>(ex. if I were to take the Blue Line home, I mark the time I first get to the UIC-Halsted Blue Line platform)|04:10 PM|
 |arrive\_home|temporal|Time of arrival at house|05:33 PM|
+|notes|n/a|What happened that day that may have affected my usual schedule (for my own journal purposes; not included in csv)|went out for sushi; train delayed multiple times|
 
 ### T2: Pilot collection
 
