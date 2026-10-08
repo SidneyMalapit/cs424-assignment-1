@@ -2,6 +2,14 @@
 
 ## T1: Observing my daily commute to class
 
+### Four inital questions
+- How might trends manifest in the data I collect about my
+  transit to/from campus?
+- How might external factors affect my transit?
+- Will the data reveal something about my commute habits? Or
+  possibly some external factors that impact my ride?
+- How much time will I usually spend on campus?
+
 I plan to collect data about my commute to and from campus
 
 - **Over how many locations, times, or days will you collect
