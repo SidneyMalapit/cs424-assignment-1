@@ -127,23 +127,44 @@ I felt like the original questions I came up with were a little
 too vague. Since there's new data I hadn't considered before, I
 can also consider that while ideating these domain questions.
 
-- How long am I away from home on days I commute to campus?
+- Q1: How long am I away from home on days I commute to campus?
 Changed from "How much time will I usually spend on campus?"
 since timestamps from one guaranteed location (my house) seems
 more sensible to consider, even though I've only ever taken the
 Blue Line to/from campus so far this semester. This could,
 however, change if I decide to take the Metra.
-- Which routes end up taking the longest?
+- Q2: Which routes end up taking the longest?
 A rather easy question to ask, but will require some narrowing
 down and specifics when actually attempting to answer. I ought to
 try and avoid having to go these routes when possible.
-- Are certain days more prone to variation in my commute?
+- Q3: Are certain days more prone to variation in my commute?
 I think this is a good question. I have some preconceptions
 regarding this considering the shenanigans I do with friends
 after class. This question also branches off "How might external
 factors affect my transit?"
-- How much downtime do I usually have before my first class of
-  the day?
+- Q4: How much downtime do I usually have before my first class
+  of the day?
 Usually, I spend this time doing homework I hadn't completed the
 night before. I'd want to know about this in order to increase it
 if possible.
+
+## T4: Domain questions -> Abstract tasks
+
+- AT1: Find the average (mean) of the difference in values over
+  multiple days of collection.
+- AT2: Find the difference in value between a pair of data points
+  collected in the same day. Repeat this for all pairs collected
+  over multiple days, and sort the differences of these pairs in
+  descending order.
+- AT3: Find the difference in value between a pair of data points
+  collected in the same day. Repeat this for all pairs collected
+  over multiple days. Aggregate these differences by averaging
+  them over its correspondent weekday category, and sort them in
+  descending order by the average.
+- AT4: Find the average of the difference between two timestamps
+  over multiple days of collection.
+
+In order to translate the domain-specific questions into abstract
+tasks, I thought back to how I approach solving problems in SQL.
+I also generalized the names of data instead of naming them as
+they are in my tables.
