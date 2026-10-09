@@ -236,3 +236,43 @@ weekdays could be most varied in commute time with this viz.
 **Visual marks:** squares/cells
 **Visual channels:** horizontal and vertical position, tint or
 saturation
+
+## T6: Summary
+
+Regarding my viz designs, I believe they're rather strong at
+conveying the domain questions I designed them around. The
+Gantt-like chart seems rather original. The bar chart ordered by
+category probably isn't new, but I did come up with it after
+pondering hard on what kind of visualization the vehicle table
+deserves. I straight up took the heatmap from GitHub oops
+
+Since I'm not collecting continuous data, I shied away from
+any visualization that could imply interpolations, like a line
+chart. I also wanted to avoid this for the reason that I'm not
+collecting data every day; there isn't a fixed interval between
+periods of collection. I also believe the square/rectangle
+visualizations make the most sense in the case of discrete data
+points.
+
+None of these visualizations are complex, and I don't believe
+they need to be. The simple presentation of the data helps
+viewers to quickly understand what's being shown them and start
+positing statements that can be made from the data. 
+
+I'm rather happy with the data I've collected so far. I guess the
+only wish I have is if I were to have started collecting the
+tables I came up with later in the process earlier, to have a
+more "complete" looking dataset. Though, I guess that's not the
+point of this project. 
+
+Growing into the habit of collecting the data (marking what time
+I left the house, details of the bus(es) I take to the Blue Line,
+when I get to the UIC-Halsted platform, etc.) was first
+difficult, but now I just remember to collect data like it's
+trivial. Picking my commute habits to focus on, something which I
+wouldn't pay much attention to at all, feels sort of enlightening
+now that I've taken the time to collect the data. It also felt
+satisfying to see the sheet increase row by row. I had fun
+collecting data myself.
+
+## T7: I worked individually!
