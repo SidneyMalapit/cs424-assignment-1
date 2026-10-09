@@ -173,3 +173,66 @@ data tables. All of these require calculating the difference
 between values, so I think showing the magnitude of this
 difference (which is an interval of time) will be of importance
 when considering possible visualizations.
+
+## T5: Viz sketches
+
+![Gantt-like chart](./img/gantt-like.jpeg)
+I've had this sort of visualization in mind for a while. While
+looking at the Vega-Lite examples, I saw a Gantt chart and
+realized I could plot my going-to campus times and my going home
+times as two separate intervals on the same row represented with
+bars. I think it makes a lot of sense for the viewer to
+distinguish what they're looking at. This particular
+visualization makes sense in determining the length of a trip. If
+I were to include marks that represent my course schedule within
+this viz to be able to compare it to the trip intervals, the
+visualization could become useful for Q1.
+
+**Visual marks:** rectangles
+**Visual channels:** horizontal and vertical position, size
+
+---
+![Heatmap](./img/heatmap.jpeg)
+I was directly inspired by GitHub for this one. The site shows a
+heatmap on the user profile page that measures how many commits
+were made on each day. See below for example (don't mind the low
+commit count): 
+![GitHub commit heatmap](./img/github-commit-heatmap.png)
+This sort of visualization could come in handy in answering Q3;
+if the tone of each square corresponds to the overall commuting
+time over a day, then the viewer can easily see if there is a
+large variation of tones over a row.
+
+**Visual marks:** squares/cells
+**Visual channels:** horizontal and vertical position, tint or
+saturation
+
+---
+![Categorical bar chart](./img/category-bars.jpeg)
+For this one, I decided to go simple. Since my collected data
+within the vehicle observations table contains many categorical
+columns, it could be useful to create a bar chart split up by
+category in order to neatly display the info.
+
+**Visual marks:** bar
+**Visual channels:** horizontal position, size
+
+---
+![Refined Gantt-like chart](./img/refined-gantt-like.jpeg)
+I really liked this visualization and I think it makes the most
+sense for the timestamp table. Color is added to distinguish
+between trips toward campus and trips leaving campus.
+
+**Visual marks:** rectangles
+**Visual channels:** horizontal and vertical position, size, color
+
+---
+![Refined heatmap](./img/refined-heatmap.jpeg)
+When I really thought about Q3, I really thought this was fitting
+even though it doesn't necesarily show an aggregation of values.
+However, I think the viewer could easily reason about which
+weekdays could be most varied in commute time with this viz.
+
+**Visual marks:** squares/cells
+**Visual channels:** horizontal and vertical position, tint or
+saturation
