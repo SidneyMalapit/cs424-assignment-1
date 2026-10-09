@@ -87,3 +87,63 @@ above, which looks like this:
 |vehicle\_type|categorical|Kind of vehicle|bus|
 
 which can be joined on the public transport vehicle table.
+
+One thing I also remembered I wanted to do was to compare the
+schedule my commute data makes with my class schedule for this
+semester.
+
+**Course schedule**
+|attribute|type|description|example|
+|---|---|---|---|
+|course|categorical|Name of the course|CS 480|
+|day|ordinal|Day of the week for the class|Wednesday|
+|start|temporal|Time of class start|11:00|
+|end|temporal|Time of class end|12:15|
+
+## T3: Description and domain questions
+
+At first, I collected timestamps every day I went to campus to
+illustrate my commute through data, but that wasn't meaningful
+enough for me. I then decided to collect specific information
+about the vehicles I rode for my commute in a different table,
+the specific attributes of that table listed in T2. Regarding the
+first table, since rows can only be collected after days where I
+commute to and from campus, the table (as of now) contains 14
+rows, with each row holding four timestamps. I've only collected
+temporal and categorical data; the temporal data mostly within my
+first table, and categorical data within the second. I've
+structured them both to use the date as an index, to allow for
+aggregation or joining of the tables upon date. With regards to
+spatial variation, there isn't much since I only really collect
+temporal data from my house and from the Blue Line, nowhere else.
+Spatial data was not collected for the data on specific vehicle
+information. However, if I were to map the destinations of
+vehicles to locations, spatial information can be manifested in
+that way (which I don't plan on doing, but who knows).
+
+### Four domain questions
+
+I felt like the original questions I came up with were a little
+too vague. Since there's new data I hadn't considered before, I
+can also consider that while ideating these domain questions.
+
+- How long am I away from home on days I commute to campus?
+Changed from "How much time will I usually spend on campus?"
+since timestamps from one guaranteed location (my house) seems
+more sensible to consider, even though I've only ever taken the
+Blue Line to/from campus so far this semester. This could,
+however, change if I decide to take the Metra.
+- Which routes end up taking the longest?
+A rather easy question to ask, but will require some narrowing
+down and specifics when actually attempting to answer. I ought to
+try and avoid having to go these routes when possible.
+- Are certain days more prone to variation in my commute?
+I think this is a good question. I have some preconceptions
+regarding this considering the shenanigans I do with friends
+after class. This question also branches off "How might external
+factors affect my transit?"
+- How much downtime do I usually have before my first class of
+  the day?
+Usually, I spend this time doing homework I hadn't completed the
+night before. I'd want to know about this in order to increase it
+if possible.
