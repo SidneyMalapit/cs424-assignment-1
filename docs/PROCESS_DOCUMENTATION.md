@@ -42,7 +42,7 @@ that to easily record data items from my commute.
 |arrive\_home|temporal|Time of arrival at house|05:33 PM|
 |notes|n/a|What happened that day that may have affected my usual schedule (for my own journal purposes; not included in csv)|went out for sushi; train delayed multiple times|
 
-### T2: Pilot collection
+## T2: Pilot collection
 
 Here are my findings after doing some observations:
 
