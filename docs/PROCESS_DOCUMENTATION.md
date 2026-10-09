@@ -79,6 +79,7 @@ the vehicles I take, as well as whether they were a bus or train,
 but I realized I could just make a lookup table for the table
 above, which looks like this:
 
+**Vehicle line information**
 |attribute|type|description|example|
 |---|---|---|---|
 |name|categorical|Name of the line|290|
