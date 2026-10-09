@@ -25,8 +25,8 @@ I plan to collect data about my commute to and from campus
     - might forget to record some times and thus introduce a
       temporal offset in the data
 
-I'll be using Google Sheets to collect my data, as I have it on
-my phone, making data entry easy
+Since I have Google Sheets installed on my phone, I'll be using
+that to easily record data items from my commute.
 
 [**Data collection spreadsheet**](https://docs.google.com/spreadsheets/d/1-2Z2D2LUQVXEo4_aCibJcYbf_6ATQ67Pk72uiq38kME/edit?usp=sharing)
 
