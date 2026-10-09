@@ -70,7 +70,7 @@ vehicles I take. Attributes listed below:
 |order|quanitative|`N`th vehicle taken when commuting to/from campus|3|
 |name|categorical|Name of the vehicle line taken|Blue Line|
 |returning|categorical (boolean)|Whether this vehicle was taken to get home|False|
-|destination|categorical|Name of the last stop the vehicle serves|Jefferson Park|
+|destination|categorical|Name of the last stop the vehicle serves before going out of service or assuming a different route|Jefferson Park|
 |model\_number|categorical|Model number of the vehicle taken|5233|
 |route\_modifier|categorical|Label that marks an alternate route/destination that deviates from the vehicle's usual trip|5000 Express|
 
