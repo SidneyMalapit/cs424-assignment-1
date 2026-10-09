@@ -169,4 +169,7 @@ tasks, I thought back to how I approach solving problems in SQL.
 I broke down each problem into a set of tasks that can be
 completed with different clauses in a query. I also generalized
 the data by avoiding referring to them as they're named in the
-data tables.
+data tables. All of these require calculating the difference
+between values, so I think showing the magnitude of this
+difference (which is an interval of time) will be of importance
+when considering possible visualizations.
