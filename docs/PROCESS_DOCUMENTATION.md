@@ -166,5 +166,7 @@ if possible.
 
 In order to translate the domain-specific questions into abstract
 tasks, I thought back to how I approach solving problems in SQL.
-I also generalized the names of data instead of naming them as
-they are in my tables.
+I broke down each problem into a set of tasks that can be
+completed with different clauses in a query. I also generalized
+the data by avoiding referring to them as they're named in the
+data tables.
