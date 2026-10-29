@@ -21,14 +21,14 @@ previous, those being:
 The relevant attributes that seem necessary to analyze in order
 to answer the above questions are listed below:
 
-From table of commute timestamps:
+From commute timestamps table:
 - day
 - leave\_home
 - arrive\_school
 - leave\_school
 - arrive\_home
 
-From table of vehicle observations:
+From vehicle trip observations table:
 - day
 - order
 - name
