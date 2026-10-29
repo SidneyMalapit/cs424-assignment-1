@@ -17,3 +17,22 @@ previous, those being:
 - Q3: Are certain days more prone to variation in my commute?
 - Q4: How much downtime do I usually have before my first class
   of the day?
+
+The relevant attributes that seem necessary to analyze in order
+to answer the above questions are listed below:
+
+From table of commute timestamps:
+- day
+- leave\_home
+- arrive\_school
+- leave\_school
+- arrive\_home
+
+From table of vehicle observations:
+- day
+- order
+- name
+- returning
+
+Of course, Q4 requires analysis of my class schedule, more
+specifically, the starting times of my classes.
