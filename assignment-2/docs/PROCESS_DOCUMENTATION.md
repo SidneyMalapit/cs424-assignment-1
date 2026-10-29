@@ -36,3 +36,14 @@ From table of vehicle observations:
 
 Of course, Q4 requires analysis of my class schedule, more
 specifically, the starting times of my classes.
+
+## T2: Data transformation
+
+### Planned transformations by table
+
+**Timestamps**
+- turn timestamps into datetimes by appending corresponding day
+  information
+
+**Vehicle trips**
+- map vehicle trips to routes (geographic path)
