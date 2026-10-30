@@ -115,7 +115,7 @@ const ganttSpec = {
     },
   ],
   "layer": [
-    // Layer A: Course Schedule Overlay with Diagonal Stripe Pattern Fill & Solid Border
+    // Layer A: Course Schedule Overlay with Diagonal Stripe Pattern Fill & Dashed Border
     {
       "data": { "name": "courseScheduleOverlay" },
       "transform": [
@@ -140,6 +140,7 @@ const ganttSpec = {
         "type": "bar",
         "fill": "#ffffff",
         "strokeWidth": 1.5,
+        "strokeDash": [4, 2],
         "opacity": 0.85
       },
       "encoding": {
@@ -293,7 +294,12 @@ const ganttSpec = {
     }
   ],
   "width": "container",
-  "height": 580
+  "height": 580,
+  "config": {
+    "scale": {
+      "bandPaddingInner": 0.22
+    }
+  }
 } as const
 
 // 2. Course Schedule Chart Spec (Matching Colors)
@@ -381,8 +387,8 @@ document.addEventListener('DOMContentLoaded', () => {
           const safeId = course.replace(/[^a-zA-Z0-9]/g, '_')
           const pattern = document.createElementNS('http://www.w3.org/2000/svg', 'pattern')
           pattern.setAttribute('id', `stripe_${safeId}`)
-          pattern.setAttribute('width', '5')
-          pattern.setAttribute('height', '5')
+          pattern.setAttribute('width', '10')
+          pattern.setAttribute('height', '10')
           pattern.setAttribute('patternUnits', 'userSpaceOnUse')
           pattern.setAttribute('patternTransform', 'rotate(45)')
 
@@ -390,7 +396,7 @@ document.addEventListener('DOMContentLoaded', () => {
           line.setAttribute('x1', '0')
           line.setAttribute('y1', '0')
           line.setAttribute('x2', '0')
-          line.setAttribute('y2', '5')
+          line.setAttribute('y2', '10')
           line.setAttribute('stroke', color)
           line.setAttribute('stroke-width', '2')
 
