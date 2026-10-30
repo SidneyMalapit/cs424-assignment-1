@@ -154,6 +154,7 @@ const ganttSpec = {
           },
           "title": "Date",
           "axis": {
+            "titlePadding": 15,
             "grid": true,
             "gridDash": [3, 3],
             "gridColor": "#cbd5e1",
@@ -324,7 +325,7 @@ const scheduleSpec = {
       "type": "nominal",
       "sort": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
       "title": "Day of the Week",
-      "axis": { "orient": "top" }
+      "axis": { "orient": "top", "labelAngle": 0 }
     },
     "y": {
       "field": "start_min",
@@ -334,6 +335,7 @@ const scheduleSpec = {
         "reverse": true
       },
       "axis": {
+        "titlePadding": 15,
         "format": ".0f",
         "values": [480, 540, 600, 660, 720, 780, 840, 900, 960, 1020, 1080, 1140],
         "labelExpr": "floor(datum.value / 60) + ':' + pad(datum.value % 60, 2, '0')"
