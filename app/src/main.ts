@@ -3,7 +3,7 @@ import embed from 'vega-embed'
 
 // 1. Gantt-like Commute Timestamps Spec
 const ganttSpec = {
-  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
   "description": "Commute departure and arrival times across days.",
   "data": { "url": "./data/final-timestamps.csv" },
   "mark": "bar",
@@ -37,7 +37,7 @@ const ganttSpec = {
 
 // 2. Vehicles Bar Chart Spec
 const vehiclesSpec = {
-  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
   "description": "Frequency of transit lines taken.",
   "data": { "url": "./data/final-vehicles.csv" },
   "mark": "bar",
