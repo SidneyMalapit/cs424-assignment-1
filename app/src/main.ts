@@ -164,7 +164,7 @@ const ganttSpec = {
         "x": {
           "field": "course_start_min",
           "type": "quantitative",
-          "title": "Time of Day",
+          "title": "Time of day",
           "scale": {
             "domain": [420, 1260]
           },
@@ -324,7 +324,7 @@ const scheduleSpec = {
       "field": "day",
       "type": "nominal",
       "sort": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
-      "title": "Day of the Week",
+      "title": "Weekday",
       "axis": { "orient": "top", "labelAngle": 0 }
     },
     "y": {
@@ -340,7 +340,7 @@ const scheduleSpec = {
         "values": [480, 540, 600, 660, 720, 780, 840, 900, 960, 1020, 1080, 1140],
         "labelExpr": "floor(datum.value / 60) + ':' + pad(datum.value % 60, 2, '0')"
       },
-      "title": "Time of Day (Vertical Timeline)"
+      "title": "Time of day"
     },
     "y2": {
       "field": "end_min"
