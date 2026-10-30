@@ -2,12 +2,26 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>app</title>
+    <title>CS 424 - Commute Visualization Dashboard</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 20px;
+        font-family: sans-serif;
+      }
+      main {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+      }
+    </style>
   </head>
   <body>
-    <div id="app"></div>
+    <main>
+      <div id="vis-gantt"></div>
+      <div id="vis-schedule"></div>
+    </main>
     <script type="module" src="/src/main.ts"></script>
   </body>
 </html>
