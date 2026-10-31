@@ -116,7 +116,7 @@ export const ganttSpec = {
             "domain": courseKeys,
             "range": courseValues
           },
-          "title": "Course / Commute"
+          "title": "Course"
         },
         "tooltip": [
           { "field": "full_date", "type": "nominal", "title": "Date" },
