@@ -1,4 +1,4 @@
-# process and documentation
+	# process and documentation
 
 ## T1: Guiding questions
 
@@ -49,3 +49,27 @@ specifically, the starting times of my classes.
 
 **Vehicle trips**
 - map vehicle trips to routes (geographic path)
+
+## T3: Exploratory visualizations
+
+![commute durations](./img/commute-durations.png)
+![vehicle frequency](./img/line-frequency.png)
+![vehicle sequence](./img/vehicle-sequence.png)
+
+I thought the commute durations visualization was the most
+usefule of the three, as it could give way to seeing trends I
+hadn't considered before. One transformation I could see being
+useful is grouping the bars by day of the week, as comparison
+between the same course schedule on different days could be
+useful in seeing how my commute varies.
+
+The pie chart mostly told me what I already knew, that my commute
+is dominated by the bus that goes straight to/from my home and
+the blue line train. However, it could be useful for a user
+unaquainted with my commute habits.
+
+The vehicle order sequence visualization seemed like it could be
+interesting, but I don't find it as useful with the way it's
+currently visualized. I don't think the marks distinguished by
+shapes are distinct enough to be useful, and the visualization
+could probably benefit from adjusting the spacing between marks.
