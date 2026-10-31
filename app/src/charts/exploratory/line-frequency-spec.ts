@@ -3,25 +3,19 @@ export const lineFrequencySpec = {
   "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
   "description": "Frequency of transit lines used",
   "data": { "url": "./data/vehicles.csv" },
-  "mark": { "type": "bar" },
+  "mark": { "type": "arc", "innerRadius": 0 },
   "encoding": {
-    "x": {
-      "field": "name",
-      "type": "nominal",
-      "title": "Transit Line",
-      "sort": { "op": "count", "order": "descending" },
-      "axis": { "labelAngle": 0 }
-    },
-    "y": {
+    "theta": {
       "aggregate": "count",
       "type": "quantitative",
-      "title": "Number of Observations",
-      "axis": { "titlePadding": 15 }
+      "title": "Number of Observations"
     },
     "color": {
       "field": "name",
       "type": "nominal",
-      "legend": null
+      "title": "Transit Line",
+      "legend": { "orient": "right" },
+      "sort": { "op": "count", "order": "descending" }
     },
     "tooltip": [
       { "field": "name", "title": "Line" },
