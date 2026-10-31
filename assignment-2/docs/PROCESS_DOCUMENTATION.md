@@ -44,6 +44,8 @@ specifically, the starting times of my classes.
 **Timestamps**
 - turn timestamps into datetimes by appending corresponding day
   information
+- calculate commute durations for each leg of the commute (home
+  to campus, campus to home)
 
 **Vehicle trips**
 - map vehicle trips to routes (geographic path)
