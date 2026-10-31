@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CS 424 - Exploratory Visualizations</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 20px;
+      }
+      main {
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+        max-width: 1200px;
+        margin: 0 auto;
+      }
+      .chart-section {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+      }
+      .chart-section h2 {
+        margin: 0;
+        font-size: 1.25rem;
+      }
+      .chart-container {
+        width: 100%;
+      }
+      header {
+        margin-bottom: 24px;
+      }
+      .nav-link {
+        float: right;
+        padding: 8px 16px;
+        background: #f3f4f6;
+        border-radius: 4px;
+        text-decoration: none;
+        color: #374151;
+        font-size: 0.875rem;
+      }
+      .nav-link:hover {
+        background: #e5e7eb;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Exploratory Visualizations</h1>
+      <p>Transit vehicle observations from commute data collection</p>
+      <a href="/" class="nav-link">← Back to Dashboard</a>
+    </header>
+    <main>
+      <section class="chart-section">
+        <h2>Vehicle sequence per day</h2>
+        <div class="chart-container" id="vis-vehicle-sequence"></div>
+      </section>
+
+      <section class="chart-section">
+        <h2>Line frequency</h2>
+        <div class="chart-container" id="vis-line-frequency"></div>
+      </section>
+
+      <section class="chart-section">
+        <h2>Vehicle type by authority</h2>
+        <div class="chart-container" id="vis-vehicle-type"></div>
+      </section>
+
+      <section class="chart-section">
+        <h2>Model number distribution</h2>
+        <div class="chart-container" id="vis-model-distribution"></div>
+      </section>
+
+      <section class="chart-section">
+        <h2>Route modifier frequency</h2>
+        <div class="chart-container" id="vis-route-modifier"></div>
+      </section>
+    </main>
+    <script type="module" src="/src/pages/exploratory/exploratory-page.ts"></script>
+  </body>
+</html>
