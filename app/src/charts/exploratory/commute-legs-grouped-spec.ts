@@ -2,6 +2,13 @@
 export const commuteLegsGroupedSpec = {
   "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
   "description": "Commute duration comparison: to campus vs to home per day",
+  "params": [
+    {
+      "name": "sortByWeekday",
+      "value": false,
+      "bind": { "input": "checkbox", "name": "Sort by weekday: " }
+    }
+  ],
   "data": { "url": "./data/timestamps.csv" },
   "transform": [
     {
@@ -27,6 +34,18 @@ export const commuteLegsGroupedSpec = {
     {
       "calculate": "timeFormat(timeParse(datum.day, '%Y-%m-%d'), '%A, %B %d, %Y')",
       "as": "full_date"
+    },
+    {
+      "calculate": "timeFormat(timeParse(datum.day, '%Y-%m-%d'), '%A')",
+      "as": "weekday"
+    },
+    {
+      "calculate": "timeFormat(timeParse(datum.day, '%Y-%m-%d'), '%w')",
+      "as": "weekday_num"
+    },
+    {
+      "calculate": "sortByWeekday ? datum.weekday_num : -toNumber(timeParse(datum.day, '%Y-%m-%d'))",
+      "as": "sort_key"
     }
   ],
   "mark": { "type": "bar", "opacity": 0.9 },
@@ -35,7 +54,7 @@ export const commuteLegsGroupedSpec = {
       "field": "formatted_date",
       "type": "nominal",
       "title": "Date",
-      "sort": { "field": "day", "op": "min", "order": "descending" },
+      "sort": { "field": "sort_key", "op": "min", "order": "ascending" },
       "axis": { "titlePadding": 15, "labelAngle": -45 }
     },
     "xOffset": {

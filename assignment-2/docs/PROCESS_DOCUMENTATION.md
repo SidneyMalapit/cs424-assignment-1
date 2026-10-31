@@ -73,3 +73,18 @@ interesting, but I don't find it as useful with the way it's
 currently visualized. I don't think the marks distinguished by
 shapes are distinct enough to be useful, and the visualization
 could probably benefit from adjusting the spacing between marks.
+
+![commute durations by weekday](./img/commute-durations-weekday.png)
+
+I wanted to group the commute durations by weekday. After
+creating the visualization, I felt there wasn't enough
+distinction between the groups when just sorting the dates by
+weekday, so I'll probably have to add another channel to the
+visualization to separate the marks more clearly.
+
+One observation I made after creating this visualization was that
+the commute to campus was greater than the commute back home more
+often than I previously thought. 7 out of the 26 days I've
+tracked so far have had a longer commute to campus than back
+home, which is more than 25% of the time. I had thought this
+would occur less.
