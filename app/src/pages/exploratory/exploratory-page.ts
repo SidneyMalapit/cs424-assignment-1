@@ -3,15 +3,11 @@ import embed from 'vega-embed'
 import { vehicleSequenceSpec } from '../../charts/exploratory/vehicle-sequence-spec'
 import { lineFrequencySpec } from '../../charts/exploratory/line-frequency-spec'
 import { vehicleTypeSpec } from '../../charts/exploratory/vehicle-type-spec'
-import { modelDistributionSpec } from '../../charts/exploratory/model-distribution-spec'
-import { routeModifierSpec } from '../../charts/exploratory/route-modifier-spec'
 
 const charts = [
   { id: 'vis-vehicle-sequence', spec: vehicleSequenceSpec, title: 'Vehicle Sequence per Day' },
   { id: 'vis-line-frequency', spec: lineFrequencySpec, title: 'Line Frequency' },
-  { id: 'vis-vehicle-type', spec: vehicleTypeSpec, title: 'Vehicle Type by Authority' },
-  { id: 'vis-model-distribution', spec: modelDistributionSpec, title: 'Model Number Distribution' },
-  { id: 'vis-route-modifier', spec: routeModifierSpec, title: 'Route Modifier Frequency' }
+  { id: 'vis-vehicle-type', spec: vehicleTypeSpec, title: 'Vehicle Type by Authority' }
 ]
 
 export async function renderExploratoryPage(): Promise<void> {
