@@ -51,8 +51,6 @@ export function applyCourseStripes(view?: View): void {
 
   applyStripes()
   if (view) {
-    view.addSignalListener('showOverlay', () => {
-      setTimeout(applyStripes, 60)
-    })
+    view.addSignalListener('showOverlay', applyStripes)
   }
 }
