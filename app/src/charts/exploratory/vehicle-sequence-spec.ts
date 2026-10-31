@@ -11,6 +11,14 @@ export const vehicleSequenceSpec = {
     {
       "calculate": "datum.returning === 'TRUE'",
       "as": "is_return"
+    },
+    {
+      "calculate": "timeFormat(timeParse(datum.day, '%Y-%m-%d'), '%a, %b %e')",
+      "as": "formatted_date"
+    },
+    {
+      "calculate": "timeFormat(timeParse(datum.day, '%Y-%m-%d'), '%A, %B %d, %Y')",
+      "as": "full_date"
     }
   ],
   "mark": { "type": "point", "filled": true, "size": 100 },
@@ -22,10 +30,10 @@ export const vehicleSequenceSpec = {
       "axis": { "labelAngle": 0 }
     },
     "y": {
-      "field": "day",
+      "field": "formatted_date",
       "type": "nominal",
       "title": "Date",
-      "sort": { "order": "descending" },
+      "sort": { "field": "day", "op": "min", "order": "descending" },
       "axis": { "titlePadding": 15 }
     },
     "color": {
@@ -44,7 +52,7 @@ export const vehicleSequenceSpec = {
       "title": "Line/Vehicle"
     },
     "tooltip": [
-      { "field": "day", "title": "Date" },
+      { "field": "full_date", "title": "Date" },
       { "field": "order", "title": "Order" },
       { "field": "name", "title": "Line" },
       { "field": "returning", "title": "Returning" },
