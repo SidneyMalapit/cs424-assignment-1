@@ -2,12 +2,12 @@ import '../../../style.css'
 import embed from 'vega-embed'
 import { vehicleSequenceSpec } from '../../charts/exploratory/vehicle-sequence-spec'
 import { lineFrequencySpec } from '../../charts/exploratory/line-frequency-spec'
-import { vehicleTypeSpec } from '../../charts/exploratory/vehicle-type-spec'
+import { commuteLegsSpec } from '../../charts/exploratory/commute-legs-spec'
 
 const charts = [
   { id: 'vis-vehicle-sequence', spec: vehicleSequenceSpec, title: 'Vehicle Sequence per Day' },
   { id: 'vis-line-frequency', spec: lineFrequencySpec, title: 'Line Frequency' },
-  { id: 'vis-vehicle-type', spec: vehicleTypeSpec, title: 'Vehicle Type by Authority' }
+  { id: 'vis-commute-legs', spec: commuteLegsSpec, title: 'Commute Legs to Campus' }
 ]
 
 export async function renderExploratoryPage(): Promise<void> {

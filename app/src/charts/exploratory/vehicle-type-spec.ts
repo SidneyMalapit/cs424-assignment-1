@@ -43,5 +43,7 @@ export const vehicleTypeSpec = {
     ]
   },
   "width": "container",
-  "height": 350
+  "height": 350,
+  "autosize": { "type": "fit", "contains": "padding" },
+  "padding": { "right": 20 }
 } as const

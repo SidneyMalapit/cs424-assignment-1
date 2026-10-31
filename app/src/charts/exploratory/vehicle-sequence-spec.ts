@@ -54,5 +54,7 @@ export const vehicleSequenceSpec = {
     ]
   },
   "width": "container",
-  "height": 500
+  "height": 500,
+  "autosize": { "type": "fit", "contains": "padding" },
+  "padding": { "right": 20 }
 } as const
